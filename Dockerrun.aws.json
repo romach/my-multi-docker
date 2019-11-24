@@ -12,6 +12,14 @@
           "containerPort": 80
         }
       ],
+      "memory": 128,
+      "links": ["client"]
+    },
+    {
+      "name": "client",
+      "image": "romach007/multi-client",
+      "hostname": "client",
+      "essential": false,
       "memory": 128
     }
   ]
